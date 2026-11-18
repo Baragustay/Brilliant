@@ -91,16 +91,6 @@
 
   .statement { position: relative; padding: 120px 0 100px; }
   .statement h2 { font-size: clamp(32px, 4.4vw, 56px); line-height: 1.08; }
-  .statement .tag { position: absolute; font-size: 15px; padding: 6px 16px; animation: bob 5s ease-in-out infinite; }
-  .statement .t2 { animation-duration: 6s; animation-delay: -2s; }
-  .statement .t3 { animation-duration: 5.5s; animation-delay: -3.5s; }
-  /* The statement's tags float gently up and down. */
-  @keyframes bob { 0%, 100% { translate: 0 0; rotate: -2deg; } 50% { translate: 0 -12px; rotate: 2deg; } }
-  @media (prefers-reduced-motion: reduce) { .statement .tag { animation: none; } }
-  .statement .t1 { left: 32px; top: 76px; }
-  .statement .t2 { right: 14%; top: 64px; }
-  .statement .t3 { left: 46%; bottom: 58px; }
-  @media (max-width: 600px) { .statement .t2 { right: 16px; top: 80px; } .statement .t1 { left: 16px; top: 56px; } }
 
   .why { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; padding-bottom: 120px; }
   .why > div > .tag { margin-bottom: 16px; }
@@ -225,9 +215,6 @@
 <main class="wrap">
 
   <section class="statement" aria-label="Kort sagt">
-    <span class="tag t1" aria-hidden="true">Nyfiken</span>
-    <span class="tag sky t2" aria-hidden="true">Skeptisk</span>
-    <span class="tag mint t3" aria-hidden="true">Testar hypoteser</span>
     <h2>Jag är nyfiken och skeptisk. Det betyder att jag frågar mycket, lyssnar noga och testar hypoteser för att hitta de bästa lösningarna.</h2>
   </section>
 
@@ -241,7 +228,7 @@
         </details>
         <details>
           <summary>Har jag en utbildning inom UX?</summary>
-          <p>Ja. Webbutveckling och användarupplevelse (Webbmasterprogrammet) på Högskolan Väst. Innan dess studerade jag fysioterapi vid Uppsala universitet.</p>
+          <p>Ja. Webbutveckling och användarupplevelse (Webmasterprogrammet) på Högskolan Väst. Innan dess studerade jag fysioterapi vid Uppsala universitet.</p>
         </details>
         <details>
           <summary>Har jag gjort intervjuer och tester?</summary>
